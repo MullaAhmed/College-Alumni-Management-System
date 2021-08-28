@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <title>My Profile</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="{% static 'assets/img/apple-icon.png'%}">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/img/favicon.ico'%}">
+    <!-- Load Require CSS -->
+    <link href="{% static 'assets/css/bootstrap.min.css'%}" rel="stylesheet">
+    <!-- Font CSS -->
+    <link href="{% static 'assets/css/boxicon.min.css'%}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap'%}" rel="stylesheet">
+    <!-- Load Tempalte CSS -->
+    <link rel="stylesheet" href="{% static 'assets/css/templatemo.css'%}">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'assets/css/custom.css'%}">
+
+    <link
+      rel="shortcut icon"
+      href="{% static 'asset/images/fav.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="{% static 'asset/images/fav.jpg'%}" />
+    <link rel="stylesheet" href="{% static 'asset/css/bootstrap.min.css'%}" />
+    <link rel="stylesheet" href="{% static 'asset/css/all.min.css'%}" />
+    <link rel="stylesheet" href="{% static 'asset/css/animate.min.css'%}" />
+
+    <link rel="stylesheet" type="text/css" href="{% static 'asset/css/style.css'%}" />
+<!--
+    
+TemplateMo 561 Purple Buzz
+
+https://templatemo.com/tm-561-purple-buzz
+
+-->
+</head>
+
+<body style="background-color: #212529 !important;">
+  
+    <!-- Header -->
+    <nav id="main_nav" class="navbar navbar-expand-lg navbar-light bg-white shadow" style="background-color:black !important;">
+      <div class="container d-flex justify-content-between align-items-center">
+          <a class="navbar-brand h1" href="{% url 'Student Home' %}">
+              <i class='bx bx-buildings bx-sm text-dark'></i>
+              <span class="text-dark h4">Code</span> <span class="text-primary h4">Bit</span>
+          </a>
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler-success" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="navbar-toggler-success">
+              <div class="flex-fill mx-xl-5 mb-2">
+                  <ul class="nav navbar-nav d-flex justify-content-between mx-xl-5 text-center text-dark">
+                      <li class="nav-item">
+                          <a style="color:azure !important;" class="nav-link btn-outline-primary rounded-pill px-3" href="{% url 'Student Home' %}" >Home</a>
+                      </li>
+                      <li class="nav-item">
+                          <a style="color:azure !important;" class="nav-link btn-outline-primary rounded-pill px-3" href="{% url 'About' %}">About</a>
+                      </li>
+                      <li class="nav-item">
+                          <a style="color:azure !important;" class="nav-link btn-outline-primary rounded-pill px-3" href="{% url 'Alumni' %}">Alumni</a>
+                      </li>
+                      <li class="nav-item">
+                          <a style="color:azure !important;" class="nav-link btn-outline-primary rounded-pill px-3" href="{% url 'Events' %}">Events</a>
+                      </li>
+                      <li class="nav-item">
+                          <a style="color:azure !important;" class="nav-link btn-outline-primary rounded-pill px-3" href="{% url 'ChatBox' %}">Chatroom</a>
+                      </li>
+                      <li class="nav-item">
+                          <a style="color:azure !important;" class="nav-link btn-outline-primary rounded-pill px-3" href="{% url 'Contact' %}">Contact</a>
+                      </li>
+                  </ul>
+              </div>
+              <div class="navbar align-self-center d-flex">
+                  <a class="nav-link" href="#"><i class='bx bx-bell bx-sm bx-tada-hover text-primary'></i></a>
+                  <a class="nav-link" href="#"><i class='bx bx-cog bx-sm text-primary'></i></a>
+                  <a class="nav-link" href="{% url 'Profile' %}"><i class='bx bx-user-circle bx-sm text-primary'></i></a>
+              </div>
+          </div>
+      </div>
+  </nav>
+  <!-- Close Header -->
+
+
+  
+
+    
+
+     
+        <!--########################### About US Starts Here ###################### -->
+
+    <div id="about_us" class="about-us container-fluid" style="background-color: #212529; color: white;">
+        <div class="container">
+          <div class="session-title row">
+            <h2 style="color: peachpuff;">About Me</h2>
+            <p>
+              There are many variations of passages of Lorem Ipsum available Lorem
+              Ipsum available but the majority
+            </p>
+            <div class="heading-line"></div>
+          </div>
+          <div class="about-row row">
+            <div class="image-col col-md-4">
+              <img src="{% static 'asset/images/about.png'%}" alt="" />
+        
+            </div>
+            <div class="detail-col col-md-8">
+              <h2  style="color: peachpuff;">John Smith</h2>
+              <h6 >Freelance Web Designer</h6>
+              <p style="color: white;">
+                There are many variations of passages of Lorem Ipsum available but
+                the majority is have suffered alteration in that some form by
+                injected humour or randomised that words which don't look even
+                slightly believable. If you are going a to use a passage of Lorem
+                Ipsum you need to be sure there isn't anything embarrassing. There
+                are is many variations of passages available.
+              </p>
+              <div class="row">
+                <div class="col-md-6 col-12">
+                  <div class="info-list">
+                    <ul>
+                      <li><span style="color: white;">Birthday:</span>05. 09.1987</li>
+                      <li><span style="color: white;">City:</span>Toranto</li>
+                      <li><span style="color: white;">Study:</span>Cambridge University</li>
+                      <li><span style="color: white;">Website:</span>www.smarteyeapps.com</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-6 col-12">
+                  <div class="info-list">
+                    <ul>
+                      <li><span style="color: white;">Age:</span>31 Years</li>
+                      <li><span style="color: white;">Degree:</span>Master</li>
+                      <li><span style="color: white;">Mail:</span>email@example.com</li>
+                      <li><span style="color: white;">Phone:</span>+01 454 548 4458</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+                            
+
+    
+
+    
+
+    <!-- Bootstrap -->
+    <script src="{% static 'assets/js/bootstrap.bundle.min.js'%}"></script>
+    <!-- Load jQuery require for Page Script -->
+    <script src="{% static 'assets/js/jquery.min.js'%}"></script>
+    <!-- Page Script -->
+    <script>
+        $(window).load(function() {
+            // Slide
+            $('.templatemo-slide-link').click(function() {
+                var this_href = $(this).attr('href');
+                $('#templatemo-slide-link-target img').attr('src', this_href);
+                return false;
+            });
+            // End Slide
+        });
+    </script>
+    <!-- Templatemo -->
+    <script src="{% static 'assets/js/templatemo.js'%}"></script>
+    <!-- Custom -->
+    <script src="{% static 'assets/js/custom.js '%}"></script>
+
+</body>
+
+</html>

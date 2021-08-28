@@ -1,0 +1,102 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport"
+    content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Profile</title>
+  <link rel="shortcut icon" href="{% static 'assets/images/fav.png'%}" type="image/x-icon" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap"
+    rel="stylesheet" />
+  <link rel="shortcut icon" href="{% static 'all_css/images/fav.jpg'%}" />
+  <link rel="stylesheet" href="{% static 'all_css/css/bootstrap.min.css'%}" />
+  <link rel="stylesheet" href="{% static 'all_css/css/all.min.css'%}" />
+  <link rel="stylesheet" href="{% static 'all_css/css/animate.min.css'%}" />
+  <link rel="stylesheet" type="text/css" href="{% static 'all_css/css/style.css'%}" />
+</head>
+
+<body>
+  <div id="about_us" class="about-us container-fluid">
+   
+    <div class="container">
+      <div class="session-title row">
+        <h2>About Me</h2>
+        <div class="heading-line"></div>
+        <br>
+        <p class="sizess">
+          <textarea name="About" id="name10" cols="90" rows="2" placeholder="About Section"></textarea>
+        </p>
+      </div>
+      <div class="about-row row">
+        <div class="image-col col-md-4 mara">
+
+          <div class="profile-pic-div">
+            <img src="{% static 'about/upload_img.png' %}" id="photo">
+            <input type="file" id="file" accept="image/*">
+            <label for="file" id="uploadBtn"></label>
+          </div>
+
+          <div class="center">
+            <button class="btn btn-primary" type="submit" id="submit">
+              Edit Info &nbsp; <i class="fas fa-edit"></i>
+            </button>
+            </button>
+          </div>
+        </div>
+        <div class="detail-col col-md-8">
+          <form action="" class="header-first">
+            <div class="harsh size">
+              <label for="fname">Currently Working</label>
+              <input type="text" name="cur" id="name" placeholder="Enter Your Currently Working Firm"><br>
+              <label for="sub">Previously Working</label>
+              <input type="text" name="pre" id="name1" placeholder="Enter Your Previously Working Firm">
+            </div>
+          </form>
+          <div class="row">
+            <div class="col-md-6 col-12">
+              <div class="info-list sizes">
+                <ul>
+                  <li><span class="bgwhite">First Name:</span><input type="text" name="fname" id="name2"
+                      placeholder="First Name">
+                  </li>
+                  <li><span class="bgwhite">City:</span>
+                    <p id="edit"><input type="text" name="city" id="name3" placeholder="City">
+                  </li>
+                  <li><span class="bgwhite">Branch:</span><input type="text" name="branch" id="name4"
+                      placeholder="Branch"></li>
+                  <li><span class="bgwhite">Passing Year:</span><input type="number" name="pass" id="name5"
+                      placeholder="Passing Year"></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6 col-12">
+              <div class="info-list sizes">
+                <ul>
+                  <li><span class="bgwhite">Last Name:</span><input type="text" name="lname" id="name6"
+                      placeholder="Last Name">
+                  </li>
+                  <li><span class="bgwhite">Degree:</span><input type="text" name="degree" id="name7"
+                      placeholder="Degree"></li>
+                  <li><span class="bgwhite">Mail ID:</span><input type="email" name="mail" id="name8"
+                      placeholder="Mail ID"></li>
+                  <li><span class="bgwhite">Phone No.:</span><input type="number" name="phone" id="name9"
+                      placeholder="Phone No">
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+<script src="{% static 'about/index-about.js'%}"></script> 
+
+</body>
+
+</html>
