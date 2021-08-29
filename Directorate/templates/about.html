@@ -1,0 +1,81 @@
+{% extends 'home.html' %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+{% block content %}
+    <!-- Start Banner Hero -->
+    <section class="bg-light w-100">
+        <div class="container">
+            <div class="row d-flex align-items-center py-5">
+                <div class="col-lg-6 text-start">
+                    <h1 class="h2 py-5 text-primary typo-space-line">About Us</h1>
+                    <p class="light-300">
+                        We are a group of four students from Pandit Deendayal Energy University.
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="{% static './assets/img/banner-img-02.svg'%}">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Banner Hero -->
+
+
+    <!-- Start Team Member -->
+    <section class="container py-5">
+        
+        <div class="col-lg-3">
+            <h2 class="h2 py-5 typo-space-line">Our Team</h2>
+           
+        <div class="pt-5 pb-3 d-lg-flex align-items-center gx-5" style="width: 55rem !important; padding-right:48px 0px 0px !important;">
+
+
+            <div class="col-lg-9 row">
+                <div class="team-member col-md-4">
+                    <img class="team-member-img img-fluid rounded-circle p-4" src="{% static './assets/img/team-01.jpg'%}" alt="Card image">
+                    <ul class="team-member-caption list-unstyled text-center pt-4 text-muted light-300">
+                        <li>Aum Davda</li>
+                        <li>web developer</li>
+                    </ul>
+                </div>
+                <div class="team-member col-md-4">
+                    <img class="team-member-img img-fluid rounded-circle p-4" src="{% static './assets/img/team-02.jpg'%}" alt="Card image">
+                    <ul class="team-member-caption list-unstyled text-center pt-4 text-muted light-300">
+                        <li>Hardeep Patel</li>
+                        <li>web developer</li>
+                    </ul>
+                </div>
+                <div class="team-member col-md-4">
+                    <img class="team-member-img img-fluid rounded-circle p-4" src="{% static './assets/img/team-03.jpg'%}" alt="Card image">
+                    <ul class="team-member-caption list-unstyled text-center pt-4 text-muted light-300">
+                        <li>Harsh Baldaniya</li>
+                        <li>web developer</li>
+                    </ul>
+                </div>
+                <div class="team-member col-md-4 ">
+                    <img class="team-member-img img-fluid rounded-circle p-4" src="{% static './assets/img/team-01.jpg'%}" alt="Card image">
+                    <ul class="team-member-caption list-unstyled text-center pt-4 text-muted light-300">
+                        <li>Ahmed Mulla</li>
+                        <li>web developer</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- End Team Member -->
+    
+    <!-- Bootstrap -->
+    <script src="{% static 'assets/js/bootstrap.bundle.min.js'%}"></script>
+
+
+    {% endblock %}
+
+
+
+   
