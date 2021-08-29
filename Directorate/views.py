@@ -74,7 +74,7 @@ def create_event(response):
             return render(response,"home.html",{"text":t})
     else:
         form=schedule_event()
-        return render(response,"Event.html",{"form":form})
+        return render(response,"event.html",{"form":form})
 
  
 #alert
