@@ -11,8 +11,8 @@ from . forms import *
 def student_home(request):
       return render(request,"student_home.html")
 
-def about(request):
-      return render(request,"about.html")
+def about1(request):
+      return render(request,"about1.html")
 
 def alumni1(request):
       alumni1=Profile.objects.all()
